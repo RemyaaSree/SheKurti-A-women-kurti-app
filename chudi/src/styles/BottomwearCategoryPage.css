@@ -1,0 +1,83 @@
+.bottomwear-category-page {
+  padding: 28px 0 60px;
+  background: var(--bg-white);
+}
+
+.bottomwear-category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.bottomwear-category-tag {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light-gray);
+}
+
+.bottomwear-category-header h1 {
+  margin: 0 0 0.4rem;
+  color: var(--text-dark);
+}
+
+.bottomwear-category-header p {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+.bottomwear-category-btn {
+  border: none;
+  background: var(--navy-dark);
+  color: #fff;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bottomwear-category-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.bottomwear-category-btn.secondary {
+  background: var(--bg-light);
+  color: var(--navy-dark);
+}
+
+.bottomwear-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.bottomwear-category-body {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.bottomwear-category-main {
+  min-width: 0;
+}
+
+.bottomwear-category-loading {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+@media (max-width: 768px) {
+  .bottomwear-category-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bottomwear-category-body {
+    grid-template-columns: 1fr;
+  }
+}

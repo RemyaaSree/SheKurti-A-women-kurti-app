@@ -1,0 +1,100 @@
+.explore-varieties {
+  padding: 1.25rem 0;
+  background-color: var(--bg-white);
+}
+
+.explore-title {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 1.25rem 0;
+}
+
+.varieties-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.variety-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  background: var(--bg-white);
+  border: none;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.variety-card:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.variety-card:focus,
+.variety-card:focus-visible,
+.variety-card:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.variety-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.variety-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.variety-card:hover .variety-image img {
+  transform: scale(1.05);
+}
+
+.variety-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.variety-name {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 0.25rem 0;
+}
+
+.variety-styles {
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .varieties-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .explore-varieties {
+    padding: 1rem 0;
+  }
+  
+  .varieties-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .explore-title {
+    font-size: var(--font-size-2xl);
+  }
+}

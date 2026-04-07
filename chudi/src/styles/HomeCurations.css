@@ -1,0 +1,148 @@
+.home-curations {
+  padding: 0.75rem 0 2rem;
+  background: var(--bg-white);
+}
+
+.curation-tabs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.curation-tab {
+  border: 1px solid var(--border-medium);
+  border-radius: 999px;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background: #e8edf3;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.curation-tab.active {
+  background: var(--navy-dark);
+  border-color: var(--navy-dark);
+  color: var(--text-white);
+}
+
+.curation-tab:focus,
+.curation-tab:focus-visible,
+.curation-tab:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.curation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-content: stretch;
+  gap: 1rem;
+}
+
+.curation-card {
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.curation-image-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.curation-image-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.curation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.curation-wishlist {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--navy-dark);
+  cursor: pointer;
+}
+
+.curation-wishlist.active {
+  color: var(--navy-dark);
+}
+
+.curation-info {
+  padding: 0.6rem 0.55rem 0.75rem;
+}
+
+.curation-info h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1b1b1b;
+  line-height: 1.35;
+  min-height: 2.9rem;
+}
+
+.curation-info p {
+  margin: 0.35rem 0 0.5rem;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.curation-add-btn {
+  width: 100%;
+  border: none;
+  background: #262634;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.55rem 0.75rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.curation-add-btn:hover {
+  background: #171722;
+}
+
+@media (max-width: 1200px) {
+  .curation-grid {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .curation-tabs {
+    flex-wrap: wrap;
+  }
+
+  .curation-tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .curation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .curation-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

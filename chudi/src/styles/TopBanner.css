@@ -1,0 +1,24 @@
+.top-banner {
+  background-color: var(--navy-dark);
+  color: var(--text-white);
+  padding: 0.5rem 0;
+  font-size: var(--font-size-xs);
+  text-align: center;
+}
+
+.top-banner-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.top-banner-content span {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .top-banner {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,259 @@
+.bottomwear-page {
+  padding: 28px 0 0;
+  background: var(--bg-white);
+}
+
+.bottomwear-topbar {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.bottomwear-nav-link {
+  border: none;
+  background: transparent;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.bottomwear-nav-link:hover {
+  color: var(--navy-dark);
+}
+
+.bottomwear-return {
+  border: 1px solid var(--navy-dark);
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.bottomwear-hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.bottomwear-tag {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light-gray);
+}
+
+.bottomwear-hero h1 {
+  margin: 0 0 0.8rem;
+  font-size: 2.2rem;
+  color: var(--text-dark);
+}
+
+.bottomwear-subtitle {
+  margin: 0 0 1.3rem;
+  color: var(--text-gray);
+  max-width: 520px;
+}
+
+.bottomwear-note {
+  margin: -0.6rem 0 1.2rem;
+  color: var(--text-light-gray);
+  font-size: 0.92rem;
+}
+
+.bottomwear-cta {
+  border: none;
+  background: var(--navy-dark);
+  color: #fff;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+
+.bottomwear-cta.secondary {
+  background: var(--bg-white);
+  color: var(--navy-dark);
+  border: 1px solid var(--navy-dark);
+}
+
+.bottomwear-hero-image {
+  border-radius: 0;
+  height: 400px;
+  background: linear-gradient(135deg, var(--bg-light), var(--bg-light-gray));
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light-gray);
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.bottomwear-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.bottomwear-section {
+  margin-bottom: 32px;
+}
+
+.bottomwear-section-header {
+  text-align: center;
+}
+
+.bottomwear-section-header h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.6rem;
+  color: var(--text-dark);
+}
+
+.bottomwear-section-header p {
+  margin: 0 0 1.2rem;
+  color: var(--text-gray);
+}
+
+.bottomwear-varieties-grid,
+.bottomwear-all-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.bottomwear-variety-card,
+.bottomwear-spotlight-card {
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bg-white);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+  padding: 0;
+  width: 100%;
+}
+
+.bottomwear-spotlight-card {
+  border-radius: 0;
+}
+
+.bottomwear-variety-card {
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+}
+
+.bottomwear-variety-card:hover {
+  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.12);
+}
+
+.bottomwear-variety-card:focus,
+.bottomwear-variety-card:focus-visible,
+.bottomwear-variety-card:active {
+  outline: none;
+}
+
+.bottomwear-image-slot {
+  height: 300px;
+  background: linear-gradient(135deg, var(--bg-light), var(--bg-light-gray));
+  border-bottom: 1px dashed var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light-gray);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
+
+.bottomwear-image-slot img,
+.bottomwear-spotlight-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.bottomwear-image-slot span,
+.bottomwear-spotlight-image span {
+  display: inline-flex;
+}
+
+.bottomwear-variety-body {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.bottomwear-variety-body h3 {
+  margin: 0 0 0.35rem;
+  color: var(--text-dark);
+}
+
+.bottomwear-variety-body p {
+  margin: 0;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+}
+
+.bottomwear-spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.bottomwear-spotlight-image {
+  aspect-ratio: 1 / 1;
+  background: var(--bg-light);
+  border-bottom: 1px dashed var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light-gray);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .bottomwear-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomwear-hero-image {
+    height: 350px;
+  }
+
+  .bottomwear-varieties-grid,
+  .bottomwear-all-grid,
+  .bottomwear-spotlight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .bottomwear-varieties-grid,
+  .bottomwear-all-grid,
+  .bottomwear-spotlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomwear-topbar {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .bottomwear-hero-image {
+    height: 300px;
+  }
+}

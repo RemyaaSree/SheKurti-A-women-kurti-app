@@ -1,0 +1,51 @@
+{
+  "views": {
+    "14": [
+      {
+        "product_id": 399158,
+        "timestamp": 1775099374
+      },
+      {
+        "product_id": 468606,
+        "timestamp": 1775099963
+      },
+      {
+        "product_id": 382922,
+        "timestamp": 1775309591
+      },
+      {
+        "product_id": 382922,
+        "timestamp": 1775311614
+      },
+      {
+        "product_id": 382922,
+        "timestamp": 1775316869
+      },
+      {
+        "product_id": 804833,
+        "timestamp": 1775464007
+      },
+      {
+        "product_id": 641862,
+        "timestamp": 1775465617
+      },
+      {
+        "product_id": 587905,
+        "timestamp": 1775465623
+      },
+      {
+        "product_id": 818225,
+        "timestamp": 1775465627
+      },
+      {
+        "product_id": 531951,
+        "timestamp": 1775465635
+      },
+      {
+        "product_id": 382922,
+        "timestamp": 1775465684
+      }
+    ]
+  },
+  "searches": {}
+}

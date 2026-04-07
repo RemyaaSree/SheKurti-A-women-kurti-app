@@ -1,0 +1,1 @@
+"""SheKurti backend package."""
